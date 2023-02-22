@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="deeryeen">
+    <meta name="description" content="IT nerd with a penchant for imagery.">
+    <meta name="og:image" content="https://deeryeen.com/card/images/yeen-thumb.webp">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="qr-container hidden" id="qr-container">
+        <img onclick="toggleQRVisibility(false)" src="images/card-link.svg">
+    </div>
+    <div class="card">
+        <h1>DEERYEEN</h1>
+        <hr>
+        <a class="button telegram" href="https://t.me/deeryeen"><img src="images/telegram-logo.svg">TELEGRAM</a>
+        <a class="button mastodon" rel="me" href="https://yeen.social/@deeryeen"><img src="images/mastodon.svg">MASTODON</a>
+        <a class="button twitter" href="https://twitter.com/deeryeen"><img src="images/twitter-logo.svg">TWITTER</a>
+        <a class="button showqr" onclick="toggleQRVisibility()"><img src="images/qr.svg">SHOW QR</a>
+        <img class="sticker" src="images/hand-over-the-blahaj.webp">
+        <p class="credit">art by <a href="https://twitter.com/Flying_Hyena"><strong>@Flying_Hyena</strong></a></p>
+    </div>
+    <script>
+        // Get qr container element
+        var qrContainer = document.getElementById("qr-container");
+        function toggleQRVisibility(isVisible) {
+            qrContainer.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

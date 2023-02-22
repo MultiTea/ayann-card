@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: #212229;
+  color: #eee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card hr {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #eee;
+}
+.card h1 {
+  font-size: 2.5rem;
+}
+.card a {
+  color: inherit;
+  text-decoration: none;
+}
+.card .credit {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+  color: #575a6d;
+}
+.card .button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #36394e;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.card .button img {
+  margin: 0;
+  margin-right: 10px;
+  width: 34px;
+  height: 34px;
+}
+.card .button:hover {
+  filter: brightness(90%);
+}
+.card .telegram {
+  background-color: #179CDE;
+}
+.card .twitter {
+  background-color: #1D9BF0;
+}
+.card .mastodon {
+  background-color: #595AFF;
+}
+.card .showqr {
+  cursor: pointer;
+}
+.card .sticker {
+  width: 60%;
+  margin: 20px auto;
+  filter: drop-shadow(1px 1px 2px #0b0b0c);
+}
+
+.qr-container {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.qr-container img {
+  width: 90%;
+  border-radius: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}/*# sourceMappingURL=index.css.map */
